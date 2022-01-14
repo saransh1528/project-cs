@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono';
+}
+
+.styled-table {
+    margin-top: 40px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    min-width: 500px;
+    box-shadow: 4px 4px 10px rgba(29, 29, 29, 0.5);
+    border-radius: 7.5px;
+}
+
+.styled-table thead tr {
+    background-color: #715AFF;
+    color: #ffffff;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 15px 15px;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #d4bafd;
+}
+
+.main {
+    background-color: #24252a;
+    width: 400px;
+    height: 330px;
+    margin: 50px auto;
+    border-radius: 1.5em;
+    box-shadow: 1px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.pqty,
+.gcode {
+    width: 76%;
+    color: #fff;
+    background: rgba(131, 125, 125, 0.04);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0;
+    text-align: center;
+    margin: 10px 0px 30px 46px;
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #a682ff, #715aff);
+    padding: 10px 40px 10px 40px;
+    border: 0;
+    margin-left: 35%;
+}
+
+.amount {
+    color: #715aff;
+    text-align: center;
+    margin-top: 50px;
+}

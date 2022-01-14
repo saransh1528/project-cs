@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="icon" href="static/icom.png">
+    <title>Order</title>
+    <link rel="stylesheet" href="static/css/order.css">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='front'>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>CODE</th>
+                        <th>NAME</th>
+                        <th>QUANTITY</th>
+                        <th>PRICE</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for k in ord %}
+                    <tr>
+                        <td>{{k.CODE}}</td>
+                        <td>{{k.NAME}}</td>
+                        <td>{{k.QUANTITY}}</td>
+                        <td>$ {{k.PRICE}}</td>
+                    </tr>
+                    {% endfor%}
+                </tbody>
+            </table>
+            <div class='amount' align='center'>
+                <p>Your current total is $ {{amount}}.
+                </p>
+            </div>
+
+            <div class="main">
+                <p class="sign" align='center'>Order</p>
+                <form class="form1" method="POST">
+
+                    <input name='code' class='gcode' type='number' align='center' placeholder="Code" min="1">
+                    <input name='qty' class='pqty' type='number' align='center' placeholder="Quantity" min="1">
+                    <input type="submit" class='submit' align='center'>
+                    <br>
+                    <a href="http://127.0.0.1:5000/done" class="pqty">
+                        <p>Checkout</p>
+                    </a>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

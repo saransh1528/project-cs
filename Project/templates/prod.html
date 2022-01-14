@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Products Available</title>
+    <link rel="icon" href="static/icom.png">
+    <link rel=stylesheet href='static/css/prod.css'>
+</head>
+
+
+<body>
+
+    <div class='container'>
+        <table class="styled-table">
+
+            <thead>
+                <tr>
+                    <th>CODE</th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for j in prod %}
+
+                <tr>
+                    <td>{{j.CODE}}</td>
+                    <td>{{j.NAME}}</td>
+                    <td>$ {{j.PRICE}}</td>
+                    <td>{{j.QUANTITY}}</td>
+
+
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="http://127.0.0.1:5000/order" target="_blank" class='button'>
+            <p>Order Now</p>
+        </a>
+    </div>
+
+</body>
+
+</html>
